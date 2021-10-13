@@ -2,15 +2,15 @@
   display: flex;
   border-bottom: 1px solid lightgray;
 }
+.product-details {
+  text-align: justify;
+}
 .product-details h5 {
   color: blue;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
-.info {
-  text-align: justify;
-  padding-left: 10px;
-}
-.info button {
+
+.product-details button {
   background-color: goldenrod;
   border-radius: 5px;
   width: 120px;

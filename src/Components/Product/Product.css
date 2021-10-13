@@ -2,3 +2,18 @@
   display: flex;
   border-bottom: 1px solid lightgray;
 }
+.product-details h5 {
+  color: blue;
+  padding-left: 10px;
+}
+.info {
+  text-align: justify;
+  padding-left: 10px;
+}
+.info button {
+  background-color: goldenrod;
+  border-radius: 5px;
+  width: 120px;
+  cursor: pointer;
+  height: 30px;
+}

@@ -6,6 +6,8 @@ import Shop from './Components/Shop/Shop';
 function App() {
   return (
     <div className="App">
+      
+      {/* All the components to display in common */}
       <Header></Header>
       <Shop></Shop>
     </div>

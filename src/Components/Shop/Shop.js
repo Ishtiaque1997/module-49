@@ -2,12 +2,21 @@ import React, { useEffect, useState } from 'react';
 import './Shop.css'
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
-import { addToDb } from '../../utilities/fakedb';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 
 const Shop = () => {
  const[products,setProducts]=useState([]);
 
  const [cart,setCart]=useState([]);
+ useEffect(()=>{
+  const savedCart=getStoredCart();
+  for (const key in savedCart ){
+    // console.log(key);
+    const addedProduct=products.find(product=>product.key===key);
+    console.log(key,addedProduct)
+  }
+ },[products])
+
  const handleAddToCart=(product)=>{
   // console.log('btn clicked',product)
   const newCart=[...cart,product];
